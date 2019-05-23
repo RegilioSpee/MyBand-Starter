@@ -1,8 +1,9 @@
 # Technisch ontwerp
 
-url voor website
-admin panel
-/
-/contact
-/over ons
-/image-upload
+| HTML Method | URL           | Action             |
+| ----------- | ------------- | ------------------ |
+| GET         | /admin-panel  | beheer van website |
+| GET         | /             | homepagina         |
+| GET         | /contact      | contactpagina      |
+| GET         | /over ons     | informatiepagina   |
+| GET         | /image-upload | afbeelding upload  |

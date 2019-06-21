@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+/* De modale content in de warper bij voorbaat verbergen */
+.wrapper .modaalContent {
+  display: none;
+}
+.cover {
+  min-width: 300px;
+  max-width: 300px;
+}
+#toggleLabel {
+  float: right;
+  padding-right: 25px;
+}
+
+/*H1 zo breed als het maar kan , behalve 2 gridcellen voor login en registeer!*/
+h1 {
+  grid-column: 1/-3;
+}
+
+form {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+/*De afb van de modale knoppen wat verkleinen*/
+img.modaal-knop {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.3s ease-out, box-shadow 0.4s ease-out;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+img.modaal-knop:hover {
+  transform: scale(1.1);
+  box-shadow: 1em 1em 2.5em rgba(0, 0, 0, 0.7);
+}
+.modaal-knop {
+  cursor: pointer;
+}
+.modaal-knop:hover {
+  color: red;
+  font-weight: 900;
+}
+
+/* Het Album opmaken*/
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80vw;
+  grid-gap: 1.5em;
+}
+.grid img {
+  max-width: 100%;
+}
+
+/* titel van modaalvenster styling */
+.title {
+  color: #42cc42;
+}
+
+/* Het modale venster opmaken */
+.modaal-achtergrond {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.modaal {
+  max-width: 80%;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: #fff;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 1em;
+  animation: vergroten 2.5s forwards;
+}
+
+@keyframes vergroten {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Sluit knop stijlen */
+.sluit-knop {
+  width: 2em;
+  cursor: pointer;
+  justify-self: end;
+  font-size: 2em;
+  font-weight: 900;
+  transform: translateX(0.5em);
+  border: 0;
+}
+.sluit-knop:hover {
+  color: red;
+}
+/* Overige stijling */
+.duur {
+  float: right;
+}
+.validatie {
+  margin-top: 2em;
+  text-align: center;
+}
+.validatie img {
+  height: 2em;
+  width: auto;
+  border: 0;
+  margin: 0 0.3em;
+}
+html,
+body {
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.wrapper {
+  margin: auto;
+  margin-top: 20px;
+}
+.t-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  float: right;
+}
+
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+
+    justify-items: center;
+  }
+  .modaal {
+    font-size: 20px;
+    padding: 1em;
+  }
+  .modaal img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 1050px) {
+  .wrapper {
+    max-width: 95vw;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+  .cover {
+    min-width: 375px;
+    max-width: 375px;
+    margin-bottom: 20px;
+  }
+  .modaal-foto {
+    min-height: 150px;
+    min-width: 330px;
+  }
+  .title {
+    font-size: 20px;
+    color: #42cc42;
+  }
+}
+
+/* Hieronder zit de styling voor modaalvenster onder de 480px */
+@media all and (max-width: 480px) {
+  .wrapper {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5em;
+    text-align: center;
+    justify-items: center;
+  }
+  .modaal {
+    font-size: 7.9px;
+    padding: 1em;
+    height: 200px;
+    width: 375px;
+  }
+  .modaal img {
+    width: 150px;
+    height: 150px;
+  }
+  hr#tussenlijn {
+    height: 0px;
+  }
+}
+@media all and (min-width: 1224px) and (max-width: 1980px) {
+  .wrapper {
+    max-width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+/* MA-Klimaat | over ons afbeeldingen stylen */
+#logo-klimaat {
+}
+
+#tussenlijn {
+  background-color: #42cc42;
+  height: 1px;
+}
+
+#paragraaf-overons {
+  text-align: center;
+}
+
+.wrapper #paragraaf-overons {
+  margin: auto;
+  width: 150%;
+  padding: 10px;
+}

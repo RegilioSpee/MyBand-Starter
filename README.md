@@ -1,6 +1,6 @@
 ## MyBand MA-klimaat
 
-www.regiliospee.nl/proj/my-band/ is een website van Regilio Spee waar gebruikers meer dingen te weten krijgen over het klimaat en wat ze eraan kunen doen, de webpagina is bedoelt voor jong en oud
+http://25889.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/proj/myband-regiliospee/inhoud/index.php?page=homepage is een website van Regilio Spee waar gebruikers meer dingen te weten krijgen over het klimaat en wat ze eraan kunen doen, de webpagina is bedoelt voor jong en oud
 De website is enigszins te vergelijken met (https://welovetheearth.org/) of (https://climate.nasa.gov/) maar toch anders omdat ik andere kleuren gebruik en zelf dingen toevoeg.
 
 ### Uniek aan dit concept is:
@@ -83,7 +83,7 @@ Deze fase duurt 3 weken
 
 | Milestone                                    | Status | Link                               |
 | -------------------------------------------- | ------ | ---------------------------------- |
-| B1-K3-W2 Link naar de live omgeving          | TODO   | [www.regiliospee.nl/proj/my-band/] |
+| B1-K3-W2 Link naar de live omgeving          | TODO   | [http://25889.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/proj/myband-regiliospee/inhoud/index.php?page=homepage] |
 | B1-K3-W2 Gebruikersdocumentatie / instructie | TODO   | [Gebruikers documentatie]          |
 | B1-K3-W3 Evaluatie                           | TODO   | [Evaluatie]                        |
 

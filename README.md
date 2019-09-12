@@ -1,12 +1,12 @@
-## K_SEC (Veilig programmeren)
+# K_SEC (Veilig programmeren)
 
-# Specificeren:
+## Specificeren:
 Responsive
 Modaal venster
 Database verbinding
 Links naar social media, github en Youtube
 
-# Ontwerpen:
+## Ontwerpen:
 
 
 

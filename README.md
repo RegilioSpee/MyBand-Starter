@@ -1,3 +1,19 @@
+##K_SEC (Veilig programmeren)
+
+#Specificeren:
+Responsive
+Modaal venster
+Database verbinding
+Links naar social media, github en Youtube
+
+#Ontwerpen:
+
+
+
+
+
+
+
 ## MyBand MA-klimaat
 
 http://25889.hosts2.ma-cloud.nl/bewijzenmap/periode1.4/proj/myband-regiliospee/inhoud/index.php?page=homepage is een website van Regilio Spee waar gebruikers meer dingen te weten krijgen over het klimaat en wat ze eraan kunen doen, de webpagina is bedoelt voor jong en oud
